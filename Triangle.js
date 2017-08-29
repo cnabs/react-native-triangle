@@ -2,6 +2,7 @@
 
 import React from 'react';
 import {
+  Animated,
   StyleSheet,
   View
 } from 'react-native';
@@ -124,7 +125,7 @@ var PropTypes = require('prop-types')
    render: function() {
      var borderStyles = this._borderStyles();
      return (
-       <View style={[styles.triangle, borderStyles, this.props.style]}/>
+       <Animated.View style={[styles.triangle, borderStyles, this.props.style]}/>
      )
    },
 
